@@ -1,5 +1,5 @@
 import React, { useState, useRef,Fragment } from "react";
-import { ContactDetails } from "../interfaces/ContactDetails";
+import { ContactDetails } from "../interfaces/ContactInterface";
 import Editable from "./Editable";
 
 const ContactCard: React.FC<ContactDetails> = ({
@@ -34,7 +34,7 @@ const ContactCard: React.FC<ContactDetails> = ({
         />
       </Editable>
 
-      <Editable
+      {/* <Editable
         text={newStreet}
         placeholder={street}
         childRef={inputRef}
@@ -96,7 +96,7 @@ const ContactCard: React.FC<ContactDetails> = ({
           value={newAge}
           onChange={(e) => setAge(e.target.value)}
         />
-      </Editable>
+      </Editable> */}
 
     </Fragment>
   );
