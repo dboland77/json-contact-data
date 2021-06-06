@@ -32,6 +32,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  align-items: center;
+  justify-content: center;
   margin: 1em;
   padding: 1empx;
 }
@@ -39,10 +41,16 @@ h1 {
 .card_item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 1em;
   margin: 1em;
 }
 
+@media (min-width: 20rem) {
+  .card_item {
+    width: 70%;
+  }
+}
 @media (min-width: 40rem) {
   .card_item {
     width: 50%;

@@ -21,7 +21,7 @@ const ContactCard: React.FC<ContactDetails> = ({
       <div className="card">
         <div className="card__text">
           <Editable
-            text={`Name: ${newName}`}
+            text={`NAME: ${newName}`}
             placeholder={newName}
             childRef={inputRef}
             type="input"
@@ -40,7 +40,7 @@ const ContactCard: React.FC<ContactDetails> = ({
 
         <div className="card__text">
           <Editable
-            text={`Street: ${newStreet}`}
+            text={`STREET: ${newStreet}`}
             placeholder={newStreet}
             childRef={inputRef}
             type="input"
@@ -58,7 +58,7 @@ const ContactCard: React.FC<ContactDetails> = ({
 
         <div className="card__text">
           <Editable
-            text={`Email: ${newEmail}`}
+            text={`EMAIL: ${newEmail}`}
             placeholder={newEmail}
             childRef={inputRef}
             type="input"
@@ -76,7 +76,7 @@ const ContactCard: React.FC<ContactDetails> = ({
 
         <div className="card__text">
           <Editable
-            text={`Phone: ${newPhone}`}
+            text={`PHONE: ${newPhone}`}
             placeholder={newPhone}
             childRef={inputRef}
             type="input"
@@ -94,7 +94,7 @@ const ContactCard: React.FC<ContactDetails> = ({
 
         <div className="card__text">
           <Editable
-            text={`Age: ${newAge}`}
+            text={`AGE: ${newAge}`}
             placeholder={newAge}
             childRef={inputRef}
             type="input"

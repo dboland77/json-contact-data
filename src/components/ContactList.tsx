@@ -6,16 +6,17 @@ const ContactList = () => {
   return (
     <Fragment>
       <div className="main">
-      <h1>Contact Cards - Please click the field to edit</h1>
+        <h1>Contact Cards - Please click the field to edit</h1>
         <ul className="cards">
           {ContactData.map((contact, index) => (
-            <ContactCard
-              name={contact.name}
-              street={contact.street}
-              email={contact.email}
-              phone={contact.phone}
-              age={contact.age}
-            ></ContactCard>
+              <ContactCard
+                key = {index}
+                name={contact.name}
+                street={contact.street}
+                email={contact.email}
+                phone={contact.phone}
+                age={contact.age}
+              ></ContactCard>
           ))}
         </ul>
       </div>
