@@ -15,16 +15,14 @@ const Editable: FC<EditableDetails> = ({
     }
   }, [isEditing, childRef]);
 
-  const handleKeyDown = (event:any, type: any) => {
+  const handleKeyDown = (event:any) => {
     const { key } = event;
     const keys = ["Escape", "Tab"];
     const enterKey = "Enter";
     const allKeys = [...keys, enterKey];
 
-    if (
-      (type === "textarea" && keys.indexOf(key) > -1) ||
-      (type !== "textarea" && allKeys.indexOf(key) > -1)
-    ) {
+    if (allKeys.indexOf(key) > -1)
+     {
       setEditing(false);
     }
   };
@@ -34,7 +32,7 @@ const Editable: FC<EditableDetails> = ({
       {isEditing ? (
         <div
           onBlur={() => setEditing(false)}
-          onKeyDown={(e) => handleKeyDown(e, type)}
+          onKeyDown={(e) => handleKeyDown(e)}
         >
           {children}
         </div>

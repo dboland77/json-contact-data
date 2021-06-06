@@ -34,7 +34,7 @@ const ContactCard: React.FC<ContactDetails> = ({
         />
       </Editable>
 
-      {/* <Editable
+       <Editable
         text={newStreet}
         placeholder={street}
         childRef={inputRef}
@@ -96,7 +96,7 @@ const ContactCard: React.FC<ContactDetails> = ({
           value={newAge}
           onChange={(e) => setAge(e.target.value)}
         />
-      </Editable> */}
+      </Editable> 
 
     </Fragment>
   );
